@@ -365,7 +365,6 @@ button {
 }
 
 /* page with button */
-
 .page-button {
     padding: 72px 0;
     margin: auto;
@@ -436,7 +435,8 @@ button {
 
 @media screen and (min-width: 768px) {
     .page-button {
-        padding-top: 109px;
+        padding-top: 112px;
+        padding-bottom: 112px;
         max-width: 768px;
         background-image: linear-gradient(to bottom,
             rgba(46, 47, 66, 0.7),
@@ -589,6 +589,7 @@ button {
 .team-list {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     gap: 72px;
 }
 
@@ -660,8 +661,8 @@ button {
 
 @media screen and (min-width: 768px) {
     .team-list {   
-        row-gap: 24px;     
-        column-gap: 64px; 
+        row-gap: 64px;     
+        column-gap: 24px; 
     }
     .team-list-item {      
         max-width: calc((100% - 24px) /2);    
@@ -678,7 +679,6 @@ button {
 }
 
 /* Our portfolio */
-
 .portfolio .portfolio-title {
     margin-bottom: 72px;
     font-weight: 700;
@@ -780,7 +780,6 @@ button {
 }
 
 /* footer */
-
 .page-footer {
     padding: 96px 0;
     background-color: #2e2f42;
@@ -793,10 +792,10 @@ button {
 }
 
 .footer-logo {
-    display: inline-block;
-    align-items: flex-start;
+    display: flex;
+    align-items: center;
+    justify-content: center; 
     margin-bottom: 16px;
-    margin-right: 149px;
     padding-left: 0;
 }
 
@@ -816,9 +815,8 @@ button {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    margin-right: 164px;
-    padding-left: 40px;
-}
+    justify-content: center;
+}   
 
 .social-media-text {
     font-weight: 500;
@@ -827,8 +825,7 @@ button {
     letter-spacing: 0.02em;
     color: #fff;
     margin-bottom: 16px;   
-    text-align: center;
-    padding-left: 56px;
+    text-align: center;    
 }
 
 .footer-icons-list {
@@ -914,21 +911,27 @@ button {
     .footer-wrapper {     
         gap: 0;
         row-gap: 72px;    
-        column-gap: 24px;       
+        column-gap: 24px; 
+        width: 584px;
     }
 
-    .logo-wrapper {
-        margin-right: 24px;   
+    .footer-logo {   
+        justify-content: flex-start;           
     }
       
     .social-media-footer {
         flex-direction: column;
-        margin-right: 164px;   
+        align-items: flex-start;    
         padding-left: 0;
     }
     .social-media-text {          
         padding-left: 0; 
-    }        
+        text-align: left;
+    }      
+    .subscribe-text {
+        text-align: left;
+    }
+    
     .form-footer {       
         gap: 24px;  
     }
@@ -943,6 +946,7 @@ button {
         padding: 0;
         row-gap: 0;
         column-gap: 0;
+        width: 100%;
     }
     .page-footer {
         padding: 100px 0;
@@ -954,6 +958,10 @@ button {
     .logo-wrapper {
         margin-right: 120px;   
     }
+    .footer-text {
+        max-width: 264px;
+    }
+
     .social-media-footer {
         margin-right: 80px;   
     }
@@ -967,7 +975,6 @@ button {
 }
 
 /* Modal */
-
 .backdrop {
     position: fixed;
     top: 0;
